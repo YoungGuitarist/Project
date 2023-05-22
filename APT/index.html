@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- скрипты -->
+    <script src="js/main.js" defer></script>
+    <script src="js/when-head-scroll.js" defer></script>
+    <script src="js/info-food.js" defer></script>
+    <script src="js/stars.js" defer></script>
+    <script src="js/checkParams.js" defer></script>
+
+    <!-- стили -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ------------------- header --------------- -->
+    <header id="head" class="head">
+        <div class="head-top">
+            <div class="heading">
+                <p class="Coffee">Coffee Town</p>
+                <p class="enjoy">just enjoy</p>
+            </div>
+        </div>
+        
+        <div class="head-middle">
+            <div class="discription">
+                <p class="txt txt-frst">Пытаясь угнаться за временем, мы стали забываться, теряя ценные минуты.</p>
+                <p class="txt txt-scnd"><font style="color: #ec7e00; font-size: 25px;">Coffee Town</font> &mdash; это кафе, в котором вы можете отдохнуть от своих проблем и
+                    насладится хорошим кофе.
+                    Лучший персонал, приятная атмосфера и большое разнообразие помогут вам расслабиться и даже забыть о
+                    своих невзгодах.</p>
+            </div>
+        </div>
+        <div class="head-bot">
+            <a href='#landing' type="button" class="btn-continue">
+                Continue
+            </a>
+            <!-- <button id="cont" type="button" onclick="btn()" class="btn-contacts">
+                <p id="contacts">Contacts</p>
+            </button> -->
+        </div>
+    </header>
+    <!-- ------------------- header --------------- -->
+
+    <!-- ------------------- main ----------------- -->
+    <main class="main" id='landing'>
+
+        <!------------------ header in main ------------------>
+        <div id="scrollHead" class="main-head">
+
+            <div id="content" class="container-main">
+                <div class="web-name">
+                    <p class="Coffee-main">Coffee Town</p>
+                    <p class="enjoy-main">just enjoy</p>
+                </div>
+            </div>
+        </div>
+        <!------------------ header in main ------------------>
+
+        <!------------------ navigation ------------------>
+        <div class="navigation">
+            <nav id="nav">
+                <a id="new-main" href="#head" class="link-nav nav-vip">
+                    Главная
+                </a>
+                <a id="nav-new" href="#new" class="link-nav">
+                    Новинки
+                </a>
+                <a id="nav-popular" href="#popular" class="link-nav">
+                    Популярное
+                </a>
+                <a id="book-link" href="#book" class="link-nav">
+                    Заказать
+                </a>
+                <a id="reviews-link" href="#reviews" class="link-nav">
+                    Отзывы
+                </a>
+                
+                <div class=""> 
+                    <a href="menu.html" class="Menu">
+                        Меню
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!------------------ navigation ------------------>
+
+        <!------------------ cards-new ------------------>
+        <div id="new" class="cards-Products">
+            <div class="heading-cards">
+                <p>Новинки</p>
+            </div>
+
+            <div class="Product-place">
+
+                <div class="section-card-one">
+
+                    <div class="card-layer layer-top">
+
+                        <div class="product">
+                            <div style="background: url(/asstets/food/bananovyi_raf.jpg); background-position: top; background-size: cover;"
+                                class="img-food">
+                            </div>
+                            <div class="discription-card">
+                                <p class="discription-txt">Банановый раф</p>
+                                <button class="purchase-btn" onclick="clickTopLeft()" type="button">
+                                    <img height="25px" src="asstets/icons/purchase button.png" alt="purchase">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div style="background: url(/asstets/food/chocolate.jpg); background-position: top; background-size: cover;"
+                                class="img-food">
+                            </div>
+                            <div class="discription-card">
+                                <p class="discription-txt">Двойной горячий шоколад с маршмеллоу</p>
+                                <button class="purchase-btn" onclick="clickTopRight()" type="button">
+                                    <img height="25px" src="asstets/icons/purchase button.png" alt="purchase">
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-layer layer-bot">
+
+                        <div class="product">
+                            <div style="background: url(/asstets/food/oblepihovyi-4ai.jpeg); background-position: top; background-size: cover;"
+                                class="img-food">
+                            </div>
+                            <div class="discription-card">
+                                <p class="discription-txt">Облепиховый чай "Сентябрь"</p>
+                                <button class="purchase-btn" onclick="clickBottomLeft()" type="button">
+                                    <img height="25px" src="asstets/icons/purchase button.png" alt="purchase">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div style="background: url(asstets/food/napoleon-tort.jpg); background-position: top; background-size: cover;"
+                                class="img-food">
+                            </div>
+                            <div class="discription-card">
+                                <p class="discription-txt">Наполеон</p>
+                                <button class="purchase-btn" onclick="clickBottomRight()" type="button">
+                                    <img height="25px" src="asstets/icons/purchase button.png" alt="purchase">
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="section-card-two">
+                    <div id="screen" class="img-card">
+                        <div id="img-screen" class="img-screen">
+
+                        </div>
+                        <div class="info-screen">
+                            <h2 id="food-name">Блюдо</h2>
+                            <p id="discription">Выберите блюдо слева</p>
+                        </div>
+                        <div class="btn-screen">
+                            <button type="button" onclick="buy()" class="screenInfoBtn" id="buyBtn">
+                                <img height="25px" src="asstets/icons/purchase button.png" alt="purchase">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!------------------ cards-new ------------------>
+
+        <!------------------ cards-popular ------------------>
+        <div style="background-color: #ffdcbc;" id="popular" class="cards-Products">
+            <div class="heading-cards">
+                <p>Популярное</p>
+            </div>
+
+            <div class="Product-place">
+
+                <div class="section-card-one">
+
+                    <div class="card-layer layer-top">
+
+                        <div class="product">
+                            <div style="background: url(/asstets/food/karamel_latte.jpg); background-position: top; background-size: cover;"
+                                class="img-food">
+                            </div>
+                            <div class="discription-card">
+                                <p class="discription-txt">Карамельный латте</p>
+                                <button class="purchase-btn" onclick="clickTopLeftPopular()" type="button">
+                                    <img height="25px" src="asstets/icons/purchase button.png" alt="purchase">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div style="background: url(/asstets/food/kapushino.jpg); background-position: top; background-size: cover;"
+                                class="img-food">
+                            </div>
+                            <div class="discription-card">
+                                <p class="discription-txt">Капучино</p>
+                                <button class="purchase-btn" onclick="clickTopRightPopular()" type="button">
+                                    <img height="25px" src="asstets/icons/purchase button.png" alt="purchase">
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-layer layer-bot">
+
+                        <div class="product">
+                            <div style="background: url(/asstets/food/chocolate-cherry.jpg); background-position: top; background-size: cover;"
+                                class="img-food">
+                            </div>
+                            <div class="discription-card">
+                                <p class="discription-txt">Пирог "Вишня в шоколаде"</p>
+                                <button class="purchase-btn" onclick="clickBottomLeftPopular()" type="button">
+                                    <img height="25px" src="asstets/icons/purchase button.png" alt="purchase">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div style="background: url(/asstets/food/cheese-cake-chocolate.jpg); background-position: top; background-size: cover;"
+                                class="img-food">
+                            </div>
+                            <div class="discription-card">
+                                <p class="discription-txt">Шоколадный чизкейк</p>
+                                <button class="purchase-btn" onclick="clickBottomRightPopular()" type="button">
+                                    <img height="25px" src="asstets/icons/purchase button.png" alt="purchase">
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="section-card-two">
+                    <div id="screen" class="img-card">
+                        <div id="img-screen-popular" class="img-screen">
+
+                        </div>
+                        <div class="info-screen">
+                            <h2 id="food-name-popular">Блюдо</h2>
+                            <p id="discription-popular">Выберите блюдо слева</p>
+                        </div>
+                        <div class="btn-screen">
+                            <button type="button" onclick="buyPopular()" class="screenInfoBtn" id="buyBtn">
+                                <img height="25px" src="asstets/icons/purchase button.png" alt="purchase">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!------------------ cards-popular ------------------>
+
+        <!-- just rect -->
+        <div class="rect"></div>
+        <!-- just rect -->
+
+        <!------------------ book menu ------------------>
+        <div id="book" class="book">
+            <form action="" class="window-of-book">
+
+                <h2 style=" font-size: 25px; font-weight: 600;">Заказать</h2>
+
+                <div class="input-section">
+                    <div class="inputbox">
+                        <span>Дата</span>
+                        <input class="input" type="text" required>
+                        <i></i>
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Выберите город</span>
+                        <input class="input" type="text" required>
+                        <i></i>
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Ваше имя</span>
+                        <input class="input" type="text" required>
+                        <i></i>
+                    </div>
+
+                    <div class="inputbox">
+                        <span>Ваш номер телефона</span>
+                        <input id="your-phone" class="input" name="phone" type="text" placeholder="+7 (000) 000-00-00" required>
+                        <i></i>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="tel: 8 888 888 88 88" class="tel-book">Заказать по номеру</a>
+                </div>
+
+                <input type="submit" value="Заказать" class="submit-btn">
+            </form>
+        </div>
+        <!------------------ book menu ------------------>
+
+        <!------------------ rewiew ------------------>
+        <footer id="reviews">
+            <div class="reviews-section" style="height: 100%;">
+                <div class="reviews">
+                    <p style="font-size: 24px; font-weight: 700; color: #8a4a02;"> Понравилось? Оставьте отзыв!</p>
+
+                    <form class="reviews-space" action="">
+                        <input id="yourName" class="input-review your-name-input" type="text" placeholder="Ваше ФИО"
+                            required>
+                        <textarea id="yourComment" required placeholder="Ваш отзыв" class="input-review review-input"
+                            name="" id="" cols="30" rows="10"></textarea>
+                        <div class="stars">
+                            <div class="star" onclick="starOne()" id="starOne" href="">
+                                <div id="One"
+                                    style="height: 15px; width: 15px; border-radius: 30px; background-color: rgb(151, 151, 151);">
+                                </div>
+                            </div>
+                            <div id="starTwo" onclick="starTwo()" class="star" href="">
+                                <div id="Two"
+                                    style="height: 15px; width: 15px; border-radius: 30px; background-color: rgb(151, 151, 151);">
+                                </div>
+                            </div>
+                            <div id="starThree" onclick="starThree()" class="star" href="">
+                                <div id="Three"
+                                    style="height: 15px; width: 15px; border-radius: 30px; background-color: rgb(151, 151, 151);">
+                                </div>
+
+                            </div>
+                            <div id="starFour" onclick="starFour()" class="star" href="">
+                                <div id="Four"
+                                    style="height: 15px; width: 15px; border-radius: 30px; background-color: rgb(151, 151, 151);">
+                                </div>
+                            </div>
+                            <div id="starFive" onclick="starFive()" class="star" href="">
+                                <div id="Five"
+                                    style="height: 15px; width: 15px; border-radius: 30px; background-color: rgb(151, 151, 151);">
+                                </div>
+                            </div>
+                        </div>
+
+                        <input id="submit" onclick="checkParam()" class="rewiew-submit" type="submit"
+                            value="Оставить отзыв">
+                    </form>
+                </div>
+
+                <div class="ready_coments">
+
+                    <div class="Coment">
+                        <div class="coment__section">
+                            <p
+                                style="background-color: #ffcb9a; padding: 10px; border: 1px solid rgb(255, 163, 98); border-radius: 5px;">
+                                Коментатор</p>
+                            <div class="ready-stars">
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_coment">
+                            <p class="review_coment_coment">Коментарий</p>
+                        </div>
+                    </div>
+
+                    <div class="Coment">
+                        <div class="coment__section">
+                            <p
+                                style="background-color: #ffcb9a; padding: 10px; border: 1px solid rgb(255, 163, 98); border-radius: 5px;">
+                                Коментатор</p>
+                            <div class="ready-stars">
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_coment">
+                            <p class="review_coment_coment">Коментарий</p>
+                        </div>
+                    </div>
+
+                    <div class="Coment">
+                        <div class="coment__section">
+                            <p
+                                style="background-color: #ffcb9a; padding: 10px; border: 1px solid rgb(255, 163, 98); border-radius: 5px;">
+                                Коментатор</p>
+                            <div class="ready-stars">
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_coment">
+                            <p class="review_coment_coment">Коментарий</p>
+                        </div>
+                    </div>
+
+                    <div class="Coment">
+                        <div class="coment__section">
+                            <p
+                                style="background-color: #ffcb9a; padding: 10px; border: 1px solid rgb(255, 163, 98); border-radius: 5px;">
+                                Коментатор</p>
+                            <div class="ready-stars">
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: gray;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_coment">
+                            <p class="review_coment_coment">Коментарий</p>
+                        </div>
+                    </div>
+
+                    <div class="Coment">
+                        <div class="coment__section">
+                            <p
+                                style="background-color: #ffcb9a; padding: 10px; border: 1px solid rgb(255, 163, 98); border-radius: 5px;">
+                                Коментатор</p>
+                            <div class="ready-stars">
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: #fd8718;">
+                                </div>
+                                <div style="height: 15px; width: 15px; border-radius: 30px; background-color: gray;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_coment">
+                            <p class="review_coment_coment">Коментарий</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="contacts">
+                    <div>
+                        <p class="last-name">Есть вопросы? Свяжитесь с нами!</p>
+                        <div style="display: flex;" class="link">
+                            <div style="display: flex; align-items: center; height: 35px; padding-top: 20px;">
+                                <div
+                                    style="filter: invert(1); display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+                                    <img style="width: 25px;" src="/asstets/icons/telephone.png" alt="">
+                                </div>
+                                <a class="linkAgain tel" href="tel:8 888 888 88 88">8 888 888 88 88</a>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; height: 35px; padding-left: 25px; padding-top: 20px;">
+                                <div
+                                    style=" filter: invert(1); display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+                                    <img style="width: 25px;" src="/asstets/icons/mail.png" alt="">
+                                </div>
+                                <a class="linkAgain mail" href="mailto: vlad2006grigoriev@mail.ru">~тык~</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons">
+
+                        <div class="icons-links">
+                            <a href=""><img class="link-img" src="asstets/icons/telegram.png" alt=""></a>
+                        </div>
+
+                        <div class="icons-links">
+                            <a href=""><img class="link-img" src="asstets/icons/inst.png" alt=""></a>
+                        </div>
+
+                        <div class="icons-links">
+                            <a href=""><img class="link-img" src="asstets/icons/vk.png" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!------------------ rewiew ------------------>
+
+    </main>
+    <!-- ------------------- main --------------- -->
+</body>
+
+</html>

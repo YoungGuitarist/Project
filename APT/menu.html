@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/menu.css">
+
+    <!-- scripts -->
+    <script src="js/menuMapping.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <a class="back" style="color: black; font-size: medium; text-decoration: none;" href="index.html">
+            <img style="height: 20px;" src="asstets/icons/left-arrow.png" alt="">
+        </a>
+        <div class="name-of-page">
+            <p class="">Наше меню</p>
+        </div>
+    </header>
+
+    <main>
+        <nav class="nav">
+
+            <form class="search">
+                <input type="text" placeholder="Введите название.." autofocus name='search' id='search' />
+                <div class="buttons">
+                    <button  type='submit'>
+                        <img class="btn-clear" style="height: 20px; display: flex; align-items: center;" src="asstets/icons/corss.png" alt="">
+                    </button>
+                    <Button id="search" onclick="srch()" type='submit'>
+                        <img class="btn-search" style="height: 20px; display: flex; align-items: center;" src="asstets/icons/loupe.png" alt="">
+                    </Button>
+                </div>
+            </form>
+
+            <div class="categories">
+                <button onclick="handleFilterByPopular()" id="popular" class="links">
+                    <a class="link">Популярное</a>
+                </button>
+                <div id="new" class="links">
+                    <a class="link" href="">Новинки</a>
+                </div>
+                <div id="drinks" class="links">
+                    <a class="link" href="">Напитки</a>
+                </div>
+                <div id="treats" class="links">
+                    <a class="link" href="">Закуски</a>
+                </div>
+                <div id="breakfast" class="links">
+                    <a class="link" href="">Завтраки</a>
+                </div>
+                <div id="salad" class="links">
+                    <a class="link" href="">Салаты</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="food" class="food">
+            <div class="popular">
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
